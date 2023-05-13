@@ -1,0 +1,104 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #47ce04;
+    height: 74px; min-width: 100vw;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 1.8em;
+    margin-top: 5px;
+    z-index: 110;
+}
+
+.container .logo {
+    order: 1;
+} 
+
+.container .drawer {
+    display: none;
+}
+
+.container .secondPartForm {
+    order: 2;
+}
+
+.container .list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.container .list li {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container .list li:hover {
+    color: #08b89d;
+}
+.container .list li:not(:last-child) {
+    margin-left: 40px;
+    
+}
+
+.container .list .linkContainer {
+    display: flex;
+    align-items: center;
+}
+
+.container .list .link {
+
+    color: #08b89d;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 62px;
+    width: 100%;
+}
+
+.container .lastPartForm {
+    order: 3;
+}
+
+.container .lastPartForm .form {
+    border-radius: 8px;
+    border: 1px solid #e5e9f0;
+    padding: 7px 12px 12px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: #032133;
+    position: relative;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .lastPartForm .form:hover {
+   background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: space-between;
+    }
+
+    .container .secondPartForm {
+        display: none;
+    }
+
+    .container .drawer {
+        display: flex;
+        
+    }
+
+    .container .lastPartForm {
+        margin-left: 20px;
+    }
+}
