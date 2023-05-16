@@ -1,0 +1,30 @@
+ @font-face {
+  font-family: 'IRANSans';
+  src: url('./../../asset/font/IRANSans\(FaNum\).ttf') format('truetype');
+}
+
+
+.container {
+    font-family: 'IRANSans';
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    /* position: relative; */
+}
+
+
+.container .bottomSection {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 65px 20px 14px 20px;
+    background-image: linear-gradient(119deg,#065482,#00c395);
+    position: absolute;
+    z-index: 0;
+    height: 115px;
+    bottom: 0;
+    width: 96.9%;
+    right: 0;
+    left: 0;
+}
+

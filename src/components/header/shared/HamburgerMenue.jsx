@@ -36,9 +36,9 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
+        {['مشاوره پزشکی', 'مشاوره روانشناسی', 'آزمایش در محل', 'نوبت دهی', 'بانک سلامت', 'مجله سلامت'].map((text) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton style={{fontWeight: '800'}}>
               <ListItemText primary={text} style={{textAlign: 'right', padding: '0 10px'}} />
             </ListItemButton>
           </ListItem>
@@ -46,7 +46,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text) => (
+        {['برای پزشکان', 'قوانین', 'سوالات متداول'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton >
               <ListItemText primary={text} style={{textAlign: 'right', padding: '0 10px'}} />

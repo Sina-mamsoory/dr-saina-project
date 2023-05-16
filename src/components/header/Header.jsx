@@ -18,9 +18,9 @@ const Header = () => {
                 <div className={styles.logo}>
                     Logo
                 </div>
-                <div className={styles.drawer}>
+                {/* <div className={styles.drawer}>
                     <TemporaryDrawer></TemporaryDrawer>
-                </div>
+                </div> */}
                 <div className={styles.secondPartForm}>
                     <ul className={styles.list}>
                         <li className={styles.dropdown} onMouseOver={() => setStatus(true)} onMouseOut={() => setStatus(false)}>
