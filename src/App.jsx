@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/header/Header'
 import { ThemeProvider } from '@emotion/react'
-import { theme } from './components/breakpoints'
-import Footer from './components/footer/Footer'
+import { theme } from './theme'
 import Home from './components/home/Home'
-import Layout from './components/Layout'
+import Layout from './theme/layout/Layout'
+import { Helmet } from 'react-helmet'
 
 
 function App() {
-
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Helmet>
+          <title>Dr saina</title>
+        </Helmet>
          <Layout >
             <Home />
          </Layout>
