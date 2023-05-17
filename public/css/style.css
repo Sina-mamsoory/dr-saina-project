@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../fonts/IRANSans\(FaNum\).ttf') format('truetype');
+}
+body {
+    font-family: IRANSans;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-x: hidden;
+}
