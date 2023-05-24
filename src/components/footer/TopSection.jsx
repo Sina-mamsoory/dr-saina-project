@@ -8,12 +8,10 @@ const TopSection = () => {
 
     return (
         <>
-            <Grid container>
-                <section className={styles.container}>
-                    <Grid item xs={12}><Accompanist /></Grid>
-                    <Grid item xs={12}></Grid>
-                </section>
-            </Grid>
+            <section className={styles.container}>
+                <Grid item xs={12}><Accompanist /></Grid>
+                <Grid item xs={12}></Grid>
+            </section>
         </>
     )
 }
