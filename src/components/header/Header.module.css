@@ -96,7 +96,8 @@
 
     .container .drawer {
         display: flex;
-        
+        position: absolute;
+        right: 0;
     }
 
     .container .lastPartForm {
