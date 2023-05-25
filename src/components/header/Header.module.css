@@ -21,6 +21,11 @@
     display: none;
 }
 
+/* container .dropdown {
+    display: flex;
+    flex-direction: column;
+}. */
+
 .container .secondPartForm {
     order: 2;
 }
@@ -45,6 +50,7 @@
     margin-left: 40px;
     
 }
+
 
 .container .list .linkContainer {
     display: flex;
@@ -86,20 +92,27 @@
 @media (max-width: 768px) {
 
     .container {
-        justify-content: space-between;
+        display: flex;
+        justify-content: space-around;
     }
 
     .container .secondPartForm {
         display: none;
     }
 
+    .container .logo {
+        order: 2;
+    } 
+
     .container .drawer {
         display: flex;
         position: absolute;
         right: 0;
+        order: 1;
     }
 
     .container .lastPartForm {
-        margin-left: 20px;
+        margin-left: 0px;
+        order: 3;
     }
 }

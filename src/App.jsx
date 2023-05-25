@@ -2,8 +2,7 @@ import { ThemeProvider } from '@emotion/react'
 import { theme } from './theme'
 import Home from './components/home/Home'
 import Layout from './theme/layout/Layout'
-import { Helmet } from 'react-helmet'
-
+import {Helmet} from "react-helmet";
 
 function App() {
   return (

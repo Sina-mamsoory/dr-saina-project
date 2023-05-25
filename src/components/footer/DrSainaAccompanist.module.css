@@ -28,7 +28,7 @@
 .contactContainer .numberContainer::before {
     content: "";
     position: absolute;
-    left: 251px;
+    left: 189px;
     display: block;
     width: 0;
     height: 0;

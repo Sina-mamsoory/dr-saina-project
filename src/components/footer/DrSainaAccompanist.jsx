@@ -20,4 +20,4 @@ const Accompanist = () => {
     )
 }
 
-export default Accompanist
+export default Accompanist;
