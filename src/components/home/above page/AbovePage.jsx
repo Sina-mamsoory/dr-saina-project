@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Container } from "@mui/material";
 import TextTransition, { presets } from 'react-text-transition';
 
 import styles from './AbovePage.module.css';
-import SearchIcon from '@mui/icons-material/Search';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 import CustomizedInputBase from "./SearchInput";
 
@@ -40,9 +38,8 @@ const AbovePage = () => {
                     <CustomizedInputBase />
                 </div>
                 <div className={styles.lastConsultation}>
-                    <span><AccessAlarmIcon style={{position: 'relative', top: '8px'}}/> <span>6 ثانیه پیش </span></span>
-                    آخرین مشاوره دریافت شده در
-                    <span> متخصص زنان و زایمان </span>
+                    <span className={styles.time}><AccessAlarmIcon style={{position: 'relative', top: '8px'}}/> <span>6 ثانیه پیش </span></span>
+                    <p className={styles.lastText}>آخرین مشاوره دریافت شده در <span> متخصص زنان و زایمان </span></p>
                 </div>
             </div>
         
