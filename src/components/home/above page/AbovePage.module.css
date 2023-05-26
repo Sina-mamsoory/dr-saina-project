@@ -10,6 +10,7 @@
     background: linear-gradient(121.9deg,#07a68d 0,#08b89d 100%);
     box-shadow: 0 10px 16px #03213314;
     border-radius: 0 0 42px 42px;
+    margin-bottom: 40px;
 }
 
 .container .sectionInfo {
