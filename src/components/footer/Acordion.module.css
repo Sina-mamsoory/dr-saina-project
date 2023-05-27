@@ -1,0 +1,16 @@
+.Acordion {
+    margin-bottom: 10px;
+}
+
+.footerAcordion {
+    list-style: none;
+    padding: 0;
+}
+
+.footerAcordion li {
+    text-align: right;
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #476171;
+}

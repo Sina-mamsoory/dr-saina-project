@@ -1,6 +1,6 @@
 .container {
     border-bottom: 1px solid #e6e9eb;
-    margin: 0 0 67px 0;
+    margin-bottom: 67px;
     width: 100vw;
 }
 
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-    margin-left: 20px;
+
     font-size: 19px;
     font-weight: 400;
     width: 170px;
@@ -43,6 +43,7 @@
 @media (max-width: 767px) {
     .container {
         border-bottom: none;
+        margin-bottom: 40px;
     }
 
     .container .comradeContainer {
