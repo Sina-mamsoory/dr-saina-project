@@ -1,0 +1,12 @@
+.container {
+   padding: 0 140px;
+   margin-bottom: 90px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+}

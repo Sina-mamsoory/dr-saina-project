@@ -1,30 +1,25 @@
-import React , {useEffect, useState} from "react";
-import { Grid, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import React , {useEffect} from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import styles from './Categories.module.css';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import { getMainCategorys } from "../../../services/api";
 import CategorieItem from "./CategorieItem";
+import { fetchMainCategories } from "../../../redux/main categories/mainCategoriesAction";
 
 
 const Categories = ({status}) => {
 
-    const [data, setData] = useState([])
+    const categoriesData = useSelector(state => state.categoriesReducer);
+    const dispatch = useDispatch();
 
     useEffect(() => {   
-        const fetchAPI = async() => {
-            setData(await getMainCategorys())
-        }
-
-        fetchAPI()
+        dispatch(fetchMainCategories())
     }, [])
 
-    console.log(data)
     return(
         <div className={status ? styles.containerShow: styles.containerNotShow}>
                 <div className={styles.categories}>
-                    {data.map(item => <CategorieItem key={item.id} data={item.name} />)}
+                    {categoriesData.mainCategories.map(item => <CategorieItem key={item.id} data={item.name} />)}
                 </div>
         </div>
     )

@@ -6,10 +6,7 @@
     align-items: center;
     background: #ffffff;
     height: 74px;
-    /* position: absolute;
-    top: 0; right: 0; */
     line-height: 1.8em;
-    margin-top: 5px;
     z-index: 110;
 }
 

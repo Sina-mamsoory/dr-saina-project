@@ -1,0 +1,63 @@
+.container {
+    width: calc(33.3333% - 12px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.09);
+    min-height: 100px;
+    margin: 12px 0;
+    margin-left: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 24px;
+    background-color: #fff;
+    transition: all 0.25s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.itemHeader {
+    display: flex;
+    align-items: center;
+    
+}
+
+.itemHeader .itemHeaderImage {
+    margin-left: 20px;
+}
+
+.itemHeader .itemHeaderText {
+    color: #03273c;
+}
+
+.itemHeader .itemHeaderText p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.itemHeader .itemHeaderText h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.itemBody .itemBodyText {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #4f6470;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 16px;
+        margin: 8px 0;
+    }
+
+    .itemHeader .itemHeaderText p{
+        font-size: 10px;
+    }
+
+    .itemHeader .itemHeaderText h3 {
+        font-size: 16px;
+    }
+}
