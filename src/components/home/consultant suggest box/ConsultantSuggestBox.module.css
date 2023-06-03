@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    padding: 6px 16px 0 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: rgba(0,195,149,.16);
+    overflow: hidden;
+    min-height: 145px;
+    position: relative;
+}
+
+.container .doYuoNeedHelp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.container .doYuoNeedHelp .doYuoNeedHelpQuestion {
+    width: 223px;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 15px 0 rgba(6,84,130,.15);
+    padding: 10px 14px;
+    background-color: #065482;
+    margin-bottom: 23px;
+}
+
+
+.container .doYuoNeedHelp .doYuoNeedHelpQuestion::after {
+    left: 156px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-top: 14px solid #065482;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: rotate(-218deg);
+    -webkit-transform: rotate(-218deg);
+    -moz-transform: rotate(-218deg);
+    -o-transform: rotate(-218deg);
+    bottom: 87px;
+    z-index: 0;
+}
+
+
+.container .doYuoNeedHelp .doYuoNeedHelpQuestion {
+    font-size: 12px;
+}
+
+.container .doYuoNeedHelp .doYuoNeedHelpNumber {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .doYuoNeedHelp .doYuoNeedHelpNumber span{
+    color: #032133;
+}
+
+.container .doYuoNeedHelp .doYuoNeedHelpNumber span:first-child {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.container .doYuoNeedHelp .doYuoNeedHelpNumber span:last-child {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container .image {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0; left: 25px;
+}
