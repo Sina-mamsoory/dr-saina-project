@@ -4,7 +4,6 @@ import { fetchMainCategories } from "../../../redux/main categories/mainCategori
 
 import styles from './ConsultantDoctorList.module.css';
 import EachCategories from "./shared/EachCategory";
-import { Grid } from "@mui/material";
 
 const ConsultantDoctorList = () => {
 
@@ -17,15 +16,11 @@ const ConsultantDoctorList = () => {
 
     return(
         <>
-            <Grid container spacing={1} className={styles.container}>
+            <div className={styles.container}>
                 {
-                    categoriesData.mainCategories.map(item => 
-                        <Grid item xs={12} md={4}>
-                            <EachCategories key={item.id} data={item} />
-                        </Grid>
-                    )
+                    categoriesData.mainCategories.map(item => <EachCategories key={item.id} data={item} />)
                 }
-            </Grid>
+            </div>
         </>
     )
 }

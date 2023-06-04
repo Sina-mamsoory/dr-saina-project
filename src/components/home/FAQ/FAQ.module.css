@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 140px 40px;
+}
+
+.container .header {
+    font-size: 25px;
+    color: #032133;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px 40px;
+    }
+}

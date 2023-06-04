@@ -1,0 +1,13 @@
+.Acordion {
+    position: relative;
+}
+
+.AcordionBefore{
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 5px;
+    background-color: #00c395;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
