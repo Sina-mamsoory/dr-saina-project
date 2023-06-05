@@ -4,6 +4,7 @@ import { fetchMainCategories } from "../../../redux/main categories/mainCategori
 
 import styles from './ConsultantDoctorList.module.css';
 import EachCategories from "./shared/EachCategory";
+import { Link } from "react-router-dom";
 
 const ConsultantDoctorList = () => {
 
@@ -18,7 +19,7 @@ const ConsultantDoctorList = () => {
         <>
             <div className={styles.container}>
                 {
-                    categoriesData.mainCategories.map(item => <EachCategories key={item.id} data={item} />)
+                    categoriesData.mainCategories.map(item =><EachCategories key={item.id} data={item} />)
                 }
             </div>
         </>

@@ -3,16 +3,14 @@
     src: url('./../../../asset/font/IRANSans\(FaNum\).ttf') format('truetype');
 }
 
-
-
-.sectionInfo {
+ .sectionInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.sectionInfo h1 {
+ .sectionInfo h1 {
     font-size: 23px;
     font-weight: 700;
     line-height: 1.69;
@@ -20,7 +18,8 @@
     color: #fff;
     margin-bottom: 10px;
 }
-.sectionInfo .contact {
+
+ .sectionInfo .contact {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -34,44 +33,39 @@
 }
 
 
-.sectionInfo .contact .contactType {
+ .sectionInfo .contact .contactType {
     margin-left: 85px;
     margin-right: 10px;
     display: flex;
 }
-.sectionInfo .contact .lastChild {
+
+ .sectionInfo .contact .lastChild {
     display: inline-block;
     transform: translateX(75px);
 }
 
-.sectionInfo p:last-child {
+ .sectionInfo p:last-child {
     margin-bottom: 25px;
 }
 
-.sectionInfo p:last-child a {
+ .sectionInfo p:last-child a {
     font-size: 18px;
     color: #fff;
 }
 
-.sectionInfo p:last-child a:hover {
+ .sectionInfo p:last-child a:hover {
     text-decoration: none;
 }
 
-.searchInput {
-    display: flex;
-    justify-content: center;
-    margin: 0 30px;
-}
-
-.lastConsultation {
+ .lastConsultation {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    margin: 40px 0;
+    margin: 40px 0 0;
 }
 
-div.lastConsultation .time {
+ div.lastConsultation .time {
     background-color: rgba(29,145,145,.41);
     padding: 6px 10px;
     margin: 0 0 8px 8px;
@@ -80,20 +74,55 @@ div.lastConsultation .time {
     border-radius: 0 50px 50px 0;
 }
 
-div.lastConsultation .lastText {
+ div.lastConsultation .lastText {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-div.lastConsultation .lastText span:last-child {
+ div.lastConsultation .lastText span:last-child {
     font-weight: bold;
     font-size: 14px;
 }
 
+ .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+ .buttons button {
+    font-family: 'IRANSans';
+    border: none; outline: none;
+    background: none;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8em;
+    width: 17%; height: 56px;
+    cursor: pointer;
+    transition: all 0.3s ;
+}
+
+ .buttons button:first-child {
+    background-color: #ed1846;
+    border: 1px solid #ed1846;
+    margin-left:12px;
+}
+
+ .buttons button:last-child:hover {
+    background-color: #fff;
+    color: #19898d;
+}
+
 @media (max-width: 767px) {
 
-    .lastConsultation {
+     .lastConsultation {
         flex-direction: column;
         margin: 40px 0 140px ;
     }    

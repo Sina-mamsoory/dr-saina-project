@@ -22,7 +22,7 @@ const AbovePage = () => {
       }, []);
 
     return (
-                <div className={styles.container}>
+            <>
                 <div className={styles.sectionInfo}>
                     <h1>مشاوره آنلاین پزشکی</h1>
                     <p className={styles.contact}>
@@ -41,7 +41,7 @@ const AbovePage = () => {
                     <span className={styles.time}><AccessAlarmIcon style={{position: 'relative', top: '8px'}}/> <span>6 ثانیه پیش </span></span>
                     <p className={styles.lastText}>آخرین مشاوره دریافت شده در <span> متخصص زنان و زایمان </span></p>
                 </div>
-            </div>
+            </>
         
     )
 }

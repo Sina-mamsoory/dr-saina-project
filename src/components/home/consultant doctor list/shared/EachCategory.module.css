@@ -15,6 +15,10 @@
     transform: translateY(-5px);
 }
 
+.container a {
+    text-decoration: none;
+}
+
 .itemHeader {
     display: flex;
     align-items: center;

@@ -40,7 +40,7 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion className={styles.Acordion} sx={{backgroundColor: '#f3f3f3', color: '#032133' , borderRadius: '8px', boxShadow: 'none',}}>
+      <Accordion className={styles.Acordion} sx={{backgroundColor: '#f3f3f3', color: '#032133' , borderRadius: '8px', boxShadow: 'none'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{color: '#5e7582'}}/>}
           aria-controls="panel3a-content"
@@ -55,7 +55,7 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion className={styles.Acordion} sx={{backgroundColor: '#f3f3f3', color: '#032133' , borderRadius: '8px', boxShadow: 'none',}}>
+      <Accordion className={styles.Acordion} sx={{backgroundColor: '#f3f3f3', color: '#032133' , borderRadius: '8px', boxShadow: 'none'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{color: '#5e7582'}}/>}
           aria-controls="panel4a-content"
